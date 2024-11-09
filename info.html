@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Лабораторная работа 6</title>
+    <style>
+        body {
+            position: relative;
+        }
+        .fixed-left {
+            position: fixed;
+            top: 56px; 
+            left: 0;
+            height: 100%;
+            width: 200px;
+            overflow-y: auto;
+        }
+        .conteiner-fluid {
+            margin-left: 220px; 
+        }
+    </style>
+</head> 
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <nav class="navbar navbar-expand-sm bg-primary justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="info.html">Информация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="films.html">Фильмы</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-left">
+        <div class="container-fluid">
+            <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#carousel">Карусель</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#films">Карточки с фильмами</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biography">Краткая информация об актёре</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carousel" class="conteiner-fluid bg-success text-white" style="padding: 100px 20px;">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img 
+                src="86.jpg" 
+                class="d-block" 
+                style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img 
+                src="jopa.jpg" 
+                class="d-block" 
+                style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="axox.jpg"
+                class="d-block" 
+                style="width:100%">
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+    </div>
+    
+    <div id="films" class="conteiner-fluid bg-warning" style="padding: 100px 20px;">
+        <h2>Информация о фильмах</h2>
+      <div class="conteiner mt-3">
+        <div class="card img-fluid" style="width: 100%;">
+            <img class="card-img-top"
+            src="titanic.jpg "
+            style="width: 100%;"
+            />
+            <div class="card-img-top">
+                <h1 class="card-title">Титаник</h1>
+                <p class="card-text">
+                    В первом и последнем плавании шикарного «Титаника» встречаются двое. 
+                    Пассажир нижней палубы Джек выиграл билет в карты, а богатая 
+                    наследница Роза отправляется в Америку, чтобы выйти замуж по расчёту. 
+                    Чувства молодых людей только успевают расцвести, и даже не классовые
+                    различия создадут испытания влюблённым, а айсберг, вставший на пути 
+                    считавшегося непотопляемым лайнера.
+                </p>
+                <a href="https://family-lordfilm.ru/titanik-1997-lord-1/" class="btn-primary">See more</a>
+            </div>
+        </div>
+      </div>
+      <div class="conteiner mt-3">
+        <div class="card img-fluid" style="width: 100%;">
+            <img class="card-img-top"
+            src="ooooo.jpg"
+            style="width: 100%;"
+            />
+            <div class="card-img-top">
+                <h1 class="card-title">Убийцы цветочной луны</h1>
+                <p class="card-text">
+                    Вскоре после Первой мировой Эрнест Беркхарт, отслуживший
+                    во Франции поваром, приезжает в Оклахому, где находится 
+                    крупная резервация индейцев племени осейдж, внезапно разбогатевших 
+                    из-за обнаруженной на их земле нефти. Там живёт его дядя Уильям 
+                    Хейл по прозвищу Король — друг индейцев и большой человек. Король
+                    убеждает Эрнеста посвататься к Молли Кайл, молодой женщине из
+                    зажиточной индейской семьи. Идея состоит в том, чтобы земельные
+                    права этой семьи со временем перешли к Беркхарту (читай к Хейлу), 
+                    а для этого всего лишь должны умереть мама Молли, её сёстры и она сама.
+                </p>
+                <a href="https://mb.lordfilm15.ru/filmy/49708-ubijcy-cvetochnoj-luny-2023.html" class="btn-primary">See more</a>
+            </div>
+        </div>
+      </div>
+      <div class="conteiner mt-3">
+        <div class="card img-fluid" style="width: 100%;">
+            <img class="card-img-top"
+            src="123.jpg"
+            style="width: 100%;"
+            />
+            <div class="card-img-top">
+                <h1 class="card-title">Великий Гэтсби</h1>
+                <p class="card-text">
+                    Весной 1922 года, в эпоху разлагающейся морали, блистательного джаза 
+                    и «королей контрабандного алкоголя», Ник Каррауэй приезжает из Среднего 
+                    Запада в Нью-Йорк. Преследуя собственную американскую мечту, он селится 
+                    по соседству с таинственным, известным своими вечеринками миллионером 
+                    Джеем Гэтсби, а на противоположном берегу бухты проживают его кузина 
+                    Дэйзи и её муж, повеса и аристократ, Том Бьюкенен. Так Ник оказывается 
+                    вовлечённым в захватывающий мир богатых — их иллюзий, любви и обманов. 
+                    Он становится свидетелем происходящего в этом мире и пишет историю 
+                    невозможной любви, вечных мечтаний и человеческой трагедии, которые 
+                    являются отражением современных времен и нравов.
+                </p>
+                <a href="https://fantastika-lordfilm.com/velikiy-getsbi-2013/" class="btn-primary">See more</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="biography" class="conteiner-fluid bg-secondary text-white" style="padding: 100px 20px;">
+        <div class="conteiner mt-3">
+            <button
+                type="'button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#demo"
+                >
+                Где родился
+            </button>
+            <div id="demo" class="collapse">
+                Леонардо Вильгельм Ди Каприо родился в Лос-Анджелесе в ноябре 1974 года. 
+                мя ребенку выбрала мама, которая, будучи беременной, посетила музей Леонардо да Винчи. 
+                Родители Джордж Ди Каприо и Ирмелин Инденбиркен развелись через год после рождения сына.
+                Отец, работавший художником и дистрибьютором комиксов, вскоре женился, а вот мама больше 
+                замуж не вышла. В воспитании сына ей помогала русская бабушка Лео, в девичестве Елена 
+                Смирнова, которая попала в США после Октябрьской революции.
+            </div>
+          </div>
+          <div class="conteiner mt-3">
+            <button
+                type="'button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#demo"
+                >
+                Личная жизнь
+            </button>
+            <div id="demo" class="collapse">
+                Личная жизнь Ди Каприо — предмет постоянного и пристального внимания медиа. Лео 
+                до сих пор не женат и считается завидным голливудским холостяком. В молодости 
+                артист встречался с датчанкой — моделью Хеленой Кристенсен. Многие предполагали, 
+                что красавица станет женой актера. Героиней второго романа знаменитости была еще 
+                одна модель — бразильянка Жизель Бюндхен. Свою любовь к девушкам модельной 
+                внешности мужчина подтвердил последующими романами. В разное время он встречался 
+                с манекенщицами Бар Рафаэли, Блейк Лайвли, Эрин Хизертон, Тони Гаррн, Ниной Агдал.
+                В 2018 году новой пассией Леонардо стала красавица Камила Морроне, падчерица актера 
+                Аль Пачино. Аргентинская модель работала с брендами Moschino, Urban Outfitters и PINK 
+                by Victoria′s Secret, фото красотки появлялись на обложке Vogue. Также она снялась в 
+                кинофильмах «Буковски» и «Жажда смерти». А в конце лета 2022 года СМИ написали о 
+                расставании Леонардо и Камилы, однако официального подтверждения информации не было.
+                Уже на следующий день таблоиды сообщили о романе Ди Каприо с украинской моделью и 
+                блогером Марией Береговой. Писали, что пара вместе якобы с июля, девушка является 
+                дочерью влиятельного бизнесмена. А в середине сентября таблоиды пестрели заголовками 
+                о романе голливудского актера с Джиджи Хадид, слухи о котором возникают не в первый раз.
+                На этом череда слухов о личной жизни Леонардо не закончилась. В конце декабря СМИ 
+                сообщили о вероятном романе Ди Каприо с Викторией Ламас, начинающей моделью и 
+                актрисой, которой на тот момент было 23 года. Уже в в феврале 2023-го таблоиды приписали 
+                актеру новый роман с Эден Полани, израильской моделью. Разница в возрасте между Леонардо 
+                и Эден — 29 лет.К слову, возраст избранниц голливудской звезды — отдельная тема для разговора. 
+                Поклонники заметили, что актер встречается предпочтительно с девушками младше 25 лет. И именно 
+                поэтому инфоповод о новой избраннице звезды Майе Джаме, которая не подходила под этот критерий, 
+                был воспринят со скептицизмом. Однако инсайдеры в 2023 году сообщали, что отношения между звездой 
+                «Титаника» и телеведущей развиваются. Оба, недавно завершив предыдущие романы, не торопились 
+                делать громких заявлений.Вскоре те же СМИ смаковали новость о новом увлечении Ди Каприо —
+                индийской модели Нилам Гилл. Писали, якобы актер даже познакомил избранницу с матерью и отчимом. 
+                Однако представитель Гилл опроверг информацию, отметив, что девушка встречается с другом Леонардо. 
+                Позже это подтвердила и сама модель.Практически сразу после этого Ди Каприо стали приписывать 
+                роман с итальянской моделью Витторией Черетти. Пару замечали на прогулках и светских мероприятиях. 
+                А осенью влюбленных застали целующимися в ночном клубе на Ибице, что лишний раз подтвердило 
+                догадки о любовной связи.
+          </div>
+          </div>
+          <div class="conteiner mt-3">
+            <button
+                type="'button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#demo"
+                >
+                Где учился
+            </button>
+            <div id="demo" class="collapse">
+                Уже в детстве Леонардо мечтал о славе актера. Школьник посещал театральные курсы и студии, 
+                где старательно обучался актерскому мастерству. Ди Каприо много и успешно снимался в рекламе, а 
+                также появлялся в эпизодах популярных сериалов. Позже 4 года учился в одном из университетов 
+                Лос-Анджелеса, где выбрал театральный факультет.
+            </div>
+          </div>
+    </div>
+      
+      
+
+</body>
+</html>
